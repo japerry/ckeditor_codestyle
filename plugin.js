@@ -33,6 +33,7 @@ CKEDITOR.plugins.add( 'codestyle', {
 				// Register the button, if the button plugin is loaded.
 				if ( editor.ui.addButton ) {
 					editor.ui.addButton( buttonName, {
+						title: 'Code',
 						label: buttonLabel,
 						command: commandName,
 						toolbar: 'basicstyles,' + ( order += 10 )
