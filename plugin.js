@@ -43,14 +43,14 @@ CKEDITOR.plugins.add( 'codestyle', {
 
 		var contentForms = {
 				code: [
-                    [ 'code' ]
+					[ 'code' ]
 				],
-	        },
+			},
 			config = editor.config,
 			lang = editor.lang.codestyle;
 
 		addButtonCommand( 'Code', lang.bold, 'code', config.coreStyles_code );
-    }
+	}
 } );
 
 // Basic Inline Styles.
@@ -72,6 +72,6 @@ CKEDITOR.plugins.add( 'codestyle', {
  * @member CKEDITOR.config
  */
 CKEDITOR.config.coreStyles_code = {
-    element: 'code',
-    attributes: { 'class': 'language-php' }
+	element: 'code',
+	attributes: { 'class': 'language-php' }
 };
