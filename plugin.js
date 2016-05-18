@@ -1,7 +1,7 @@
 
 CKEDITOR.plugins.add( 'codestyle', {
 	// jscs:disable maximumLineLength
-	lang: 'en-au,en-ca,en-gb,', // %REMOVE_LINE_CORE%
+	lang: 'en,en-au,en-ca,en-gb,', // %REMOVE_LINE_CORE%
 	// jscs:enable maximumLineLength
 	icons: 'code', // %REMOVE_LINE_CORE%
 	hidpi: false, // %REMOVE_LINE_CORE%
