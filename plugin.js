@@ -1,7 +1,7 @@
 
 CKEDITOR.plugins.add( 'codestyle', {
 	// jscs:disable maximumLineLength
-	lang: 'en-au,en-ca,en-gb,', // %REMOVE_LINE_CORE%
+	lang: 'en,en-au,en-ca,en-gb,', // %REMOVE_LINE_CORE%
 	// jscs:enable maximumLineLength
 	icons: 'code', // %REMOVE_LINE_CORE%
 	hidpi: false, // %REMOVE_LINE_CORE%
@@ -33,6 +33,7 @@ CKEDITOR.plugins.add( 'codestyle', {
 				// Register the button, if the button plugin is loaded.
 				if ( editor.ui.addButton ) {
 					editor.ui.addButton( buttonName, {
+						title: 'Code',
 						label: buttonLabel,
 						command: commandName,
 						toolbar: 'basicstyles,' + ( order += 10 )
@@ -42,14 +43,14 @@ CKEDITOR.plugins.add( 'codestyle', {
 
 		var contentForms = {
 				code: [
-                    [ 'code' ]
+					[ 'code' ]
 				],
-	        },
+			},
 			config = editor.config,
 			lang = editor.lang.codestyle;
 
 		addButtonCommand( 'Code', lang.bold, 'code', config.coreStyles_code );
-    }
+	}
 } );
 
 // Basic Inline Styles.
@@ -71,6 +72,6 @@ CKEDITOR.plugins.add( 'codestyle', {
  * @member CKEDITOR.config
  */
 CKEDITOR.config.coreStyles_code = {
-    element: 'code',
-    attributes: { 'class': 'language-php' }
+	element: 'code',
+	attributes: { 'class': 'language-php' }
 };
